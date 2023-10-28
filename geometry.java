@@ -107,8 +107,8 @@ public class geometry {
                 }
             }
         }
-        for (int i = 0; i < figures.size(); i++) {
-            figures.get(i).results();
+        for (geometry.figure figure : figures) {
+            figure.results();
         }
 
     }
@@ -165,7 +165,7 @@ public class geometry {
         private double a, b, x1, x2, x3, x4, y1, y2, y3, y4;
         public quadrangle(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4) {
             a = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
-            b = sqrt(pow(x3-x1,2)+pow(y3-y1, 2));
+            b = sqrt(pow(x4-x1,2)+pow(y4-y1, 2));
             this.x1 = x1;
             this.x2 = x2;
             this.x3 = x3;
